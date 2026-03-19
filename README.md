@@ -54,7 +54,5 @@
 - Run `docker build` → Creates an image  
 - Run `docker run` → Starts a container  
 - Use `docker push/pull` → Interact with Docker Hub
-- ![Docker Architecture](
-  Kubernetes
-/architecture.png
+- ![Docker Architecture](architecture.png
 )

@@ -55,5 +55,5 @@
 - Run `docker run` → Starts a container  
 - Use `docker push/pull` → Interact with Docker Hub
 - ![Docker Architecture](Kubernetes
-/Screenshot 2026-03-17 230422.png
+/architecture.png
 )

@@ -24,14 +24,20 @@ Instead of writing code from scratch, I used this app to focus purely on underst
 
 ---
 
-## 📝 Dockerfile I wrote
+##⚙️ Dockerfile Breakdown
 
- . FROM node:18-alpine
- . WORKDIR /app
- . COPY . .
- . RUN npm install --production
- . CMD ["node","src/index.js"]
- . EXPOSE 3000
+FROM node:18-alpine → Lightweight Node.js environment
+
+WORKDIR /app → Sets working directory inside container
+
+COPY . . → Copies project files
+
+RUN npm install --production → Installs required dependencies
+
+CMD ["node","src/index.js"] → Runs the application
+
+EXPOSE 3000 → Defines the app port
+
 
 ---
 

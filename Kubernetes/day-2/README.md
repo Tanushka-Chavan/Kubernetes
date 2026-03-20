@@ -26,12 +26,12 @@ Instead of writing code from scratch, I used this app to focus purely on underst
 
 ## 📝 Dockerfile I wrote
 
-FROM node:18-alpine
-WORKDIR /app
-COPY . .
-RUN npm install --production
-CMD ["node","src/index.js"]
-EXPOSE 3000
+ . FROM node:18-alpine
+ . WORKDIR /app
+ . COPY . .
+ . RUN npm install --production
+ . CMD ["node","src/index.js"]
+ . EXPOSE 3000
 
 ---
 

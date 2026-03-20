@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: day2-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: day2-app
+  template:
+    metadata:
+      labels:
+        app: day2-app
+    spec:
+      containers:
+        - name: day2-container
+          image: ghcr.io/tanushka-chavan/day2-final:latest
+          ports:
+            - containerPort: 3000
